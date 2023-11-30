@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+/*font-family: 'Crimson Text', serif;*/
+
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  font-family: Inter, sans-serif;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow:#5E5447 0px 10px 10px -12px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Crimson Text', serif;
+  font-weight: bold 700;
+  color: #5E472A;
+  cursor: pointer;
+}
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #5E5447;
+}
+.header-menu li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.2s;
+  color: black;
+}
+.header-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  font-family: Inter, sans-serif;
+}
+.main-cards {
+  min-height: 50vh;
+  width: 75%;
+}
+#cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 850px;
+  margin: 0;
+}
+.item{
+  height: 340px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  border: 1px dashed black;
+}
+.item:hover{
+  box-shadow: 2px 2px 10px #5E5447;
+  transition: 0.2s;
+}
+.allImagem{
+  width: 250px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item img {
+  max-width: 150px;
+}
+.item p{
+  width: 200px;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Crimson Text', serif;
+  font-weight: bolder;
+}
+.item span{
+  width: 200px;
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  font-weight: normal;
+}
+.item button{
+  width: 250px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  color: #5E5447;
+}
+.item button:hover{
+  color: black;
+  text-decoration:underline;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.main-details {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  width: 25%;
+}
+#form{
+  display: flex;
+}
+.main-search {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  max-height: 20%;
+}
+.search-input {
+  height: 40%;
+  width: 70%;
+  border: none;
+  background-color: #f5f5f5;
+}
+
+.search-button {
+  height: 40%;
+  width: 30%;
+  border: none;
+  background-color:#5E5447;
+  color: #fff;
+}
+.search-button:hover{
+  cursor: pointer;
+}
+
+.main-details aside {
+  width: 100%;
+  height: 360px;
+  max-height: 80%;
+}
+
+.cart-title {
+  background-color: #AB814D;
+  color: #ffffff;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-title h4 {
+  font-size: 1.2rem;
+}
+.cart-empty {
+  height: 60%;
+  width: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cart-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.itensCarrinho{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 235px;
+  height: 90px;
+  margin: 5px;
+  border: 1px dashed #5E5447;
+}
+.divImg img{
+  width: 80px;
+}
+.itensCarrinho .nomeDosItensNoCarrinho{
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+}
+.itensCarrinho .nomeDosItensNoCarrinho p{
+  font-size: 13px;
+  text-align: start;
+}
+.itensCarrinho .nomeDosItensNoCarrinho span{
+  font-size: 15px;
+  text-align: start;
+}
+.itensCarrinho .nomeDosItensNoCarrinho button{
+  background-color: transparent;
+  border: none;
+  align-items: safe;
+  width: 95px;
+  color:#5E5447;
+}
+.itensCarrinho .nomeDosItensNoCarrinho button:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  color:black;
+  transition: 0.2s;
+}
+
+.guardaBotoes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 5px;
+  height: 15px;
+  width: 15px;
+}
+.botao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: none; 
+  border: 1px solid black;
+  background-color: #5e544791;
+  text-align: center;
+  height: 14px;
+  width: 14px;
+  cursor: pointer;
+}
+.guardaBotoes p{
+  font-size: 12px;
+  text-align: center;
+  border: 1px dashed black;
+
+  height: 12px;
+  width: 12px;
+}
+
+
+.cart-empty h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cart-details {
+  height: 30%;
+  width: 100%;
+  background-color: #5E5447;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.details-values {
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

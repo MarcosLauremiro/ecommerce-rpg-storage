@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="script/database.js" defer></script>
+    <script src="script/index.js" defer></script>
+    <title>RPG store</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1 id="home">RPG store</h1>
+        <nav>
+          <ul class="header-menu">
+            <li class="menu_tags">Livros</li>
+            <li class="menu_tags">Aneis</li>
+            <li class="menu_tags">Mochilas</li>
+            <li class="menu_tags">Cintos</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="main-cards">
+        <ul id="cards"></ul>
+      </section>
+      <section class="main-details">
+        <div class="main-search">
+          <form id="form" action="">
+            <input
+              id="pesquisa"
+              class="search-input"
+              type="text"
+              placeholder="Digite aqui sua pesquisa"
+            />
+            <button class="search-button" type="submit">Pesquisar</button>
+                    </div>
+          </form>
+        <aside>
+          <div class="cart-title">
+            <h4>Carrinho de compras</h4>
+          </div>
+          <div class="cart-empty">
+            <h5>Carrinho Vazio</h5>
+            <p>Adicione Itens</p>
+          </div>
+
+          <div class="cart-products">
+            <ul class="cart-list"></ul>
+          </div>
+          <div class="cart-details">
+            <div class="details-values">
+              <p>Quantidade:</p><span id="quantidade">0</span>
+            </div>
+            <div class="details-values">
+              <p>Total:</p>
+              <span id="valorTotal">R$0,00</span>
+            </div>
+
+          </div>
+
+          
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
